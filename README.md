@@ -1,66 +1,75 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+Для запуска проекта необходимы **PHP версии 8.3** и **Node.js версии 18+**.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Запуск:
+```bash
+composer install
+npm i
+npm run build
+php artisan serve
+```
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Команда: InSight  
+**Состав Команды**:  
+- Рашитов Ришат  
+- Байдаулетов Ерасыл  
 
-## Learning Laravel
+**Проект**: Telegram mini app + blockchain
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### 1. Описание текущего состояния проекта
+На данный момент наша команда разработала основную функциональность Telegram мини-приложения на Laravel 11. Приложение включает следующие основные элементы:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **Главный экран**
+- **Навигация**
+- **Профиль**: позволяет пользователю просматривать и редактировать свои данные.
+- **Достижения**: содержит список достигнутых пользователем целей таких как "Выполнил задания в срок".
+- **Рейтинг**: отображает список пользователей с наибольшим количеством баллов, давая возможность увидеть, кто лидирует.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+#### 2. Будущие дополнения
+- **Геймификация**
+  - **Уровни сложности**: введение уровней, на которых пользователи смогут зарабатывать больше очков за выполнение более сложных заданий.
+- **Интерактивные задания**
+  - **Ежедневные/еженедельные задания**: возможность выполнения регулярных заданий для получения бонусных баллов и достижений.
+- **Социальные функции**
+  - **Друзья**: возможность видеть, сколько баллов набирают ваши друзья, которые пользуются этим приложением.
+- **Расширение рейтинговой системы**
+  - **Разные рейтинги**: добавление нескольких рейтингов — глобальный, среди друзей, по категориям.
+- **Программы вознаграждений**
+  - **Система наград**: возможность обменивать баллы на цифровые награды или специальные бонусы.
+- **Персонализация**
+  - **Настройки профиля**: добавление аватаров, фонов и других визуальных элементов для персонализации профиля пользователя.
+- **Отправление Push уведомлений**: Telegram бот будет уведомлять пользователя о новых функциях в приложении или же кидать напоминание.
+- **ИИ-функции**
+  - **Раздел чат-бота**: пользователь может задавать свои вопросы ИИ.
+  - **Сопровождение во время курса**: например, когда пользователь проходит тест и ошибается где-то, ИИ сможет ему помогать, объясняя, почему его ответ неправильный.
+- **Добавление веб-версии**
+  - Те же функции мини-приложения, только для тех, кто хочет учиться с компьютера.
+- **Добавление админ-панели**
+  - **Просмотр профилей пользователей**: администратор сможет просматривать полную информацию о каждом пользователе, включая достижения, прогресс, рейтинг и активности.
+  - **Редактирование пользователей**: возможность редактировать данные пользователей, изменять их статус, сбрасывать пароли или временно блокировать учетные записи.
+  - **Управление заданиями**: администратор может добавлять, редактировать и удалять задания. Включение функции предварительного просмотра и утверждения контента перед публикацией.
+  - **Управление сертификатами (NFT)**: возможность вручать или отзывать NFT-сертификаты за достижения, а также управлять связями с блокчейном.
+  - **Редактирование курсов**: возможность в любое время редактировать содержание курса, изменять материалы, обновлять задания или добавлять новые модули.
 
-## Laravel Sponsors
+#### 3. Технология блокчейн
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+##### Токенизация достижений
+Одним из ключевых направлений для дальнейшего развития нашего приложения является токенизация достижений пользователей с использованием технологии блокчейн. Каждое достижение или награда может быть преобразовано в уникальный NFT (невзаимозаменяемый токен), который будет храниться в блокчейне.
 
-### Premium Partners
+Это позволит каждому пользователю стать владельцем цифрового актива, который подтверждает выполнение задачи или достижение цели. Преимущества такой системы заключаются в следующем:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+- **Уникальность и неподдельность**: все награды представлены в виде NFT, что гарантирует их уникальность и защиту от подделки.
+- **Прозрачность и безопасность**: вся информация о получении и владении достижениями будет зафиксирована в блокчейне, обеспечивая полную прозрачность и неизменность данных.
+- **Цифровые сертификаты**: мы планируем выдавать пользователям сертификаты в виде NFT за выполнение определенных задач или достижений. Такие сертификаты можно будет сохранить в личном блокчейн-кошельке и использовать как подтверждение приобретенных навыков или выполнения учебных программ.
 
-## Contributing
+#### 4. Текущие результаты
+На сегодняшний день проект находится на стадии разработки. Мы реализовали основные функции, но предстоит добавить еще множество элементов, включая уровни сложности и систему вознаграждений, чтобы сделать приложение более интерактивным и интересным для пользователей.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Мы уверены, что внедрение новых функций сделает наше приложение более привлекательным для пользователей и поможет достичь высоких показателей вовлеченности.
 
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+#### Ссылки:
+- **Telegram приложение**: [InSight LMS Bot](https://t.me/insight_lms_bot/learn)
+- **GitHub**: [Репозиторий InSight LMS](https://github.com/rawitjan/insight-lms)
